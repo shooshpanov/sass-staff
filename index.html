@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Some site</title>
 
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem magnam velit nam officiis molestiae laudantium autem accusamus enim libero totam sit, ab pariatur necessitatibus, recusandae aliquid ipsa atque numquam omnis.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nesciunt deserunt sapiente, nobis vel eveniet doloremque commodi amet illum? Autem, placeat deleniti laboriosam nostrum consequuntur totam minus rem cupiditate rerum!</p>
-  
+
+<body class="site single">
+  <!-- HEADER -->
+  <header id="site__header"></header>
+
+  <!-- MAIN -->
+  <main id="site__main">
+    <!-- ARTICLE -->
+    <article class="article article--single">
+    <!-- ARTICLE HEADER -->
+    <header class="article__header">
+      <h1> We believe everyone should experience audio in its truest form</h1>
+
+      <!-- BYLINE -->
+      <div class="byline">
+        <div class="byline__box byline__author">
+          Serge S. (@shushpanov)
+        </div>
+        <div class="byline__box byline__time">
+            <time> January 1, 1970</time>
+        </div>
+      </div>
+    </header>
+
+    <!-- ARTICLE IMAGE -->
+    <div class="article__image">
+      <img src="https://cdn.scotch.io/10/fWlY0OEqSyi6RDN3mGwb_vuex%20scotch.png.jpg" alt="">
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="actions">
+      <a href="#" class="actions__btn actions__btn--turntables">View Code</a>
+      <a href="#" class="actions__btn actions__btn--speakers">View Demo</a>
+    </div>
+
+    <!-- ARTICLE INNER-->
+    <div class="article__inner">
+
+    </div>   
+  </article>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <!-- TABLE OF CONTENTS -->
+        <ul class="table-of-contents">
+          <li><a href="#">Intro</a></li>
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#">Assembly</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+
+        <!-- SIDEBAR ADS -->
+        <div class="ad">
+          <img src="http://placekitten.com/g/300/250" alt="">
+        </div>
+    </aside>
+
+    <!-- CONTENT BODY -->
+    <div class="article__content content">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum magnam.</p>
+      
+      <h2>Introduction</h2>
+      
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum magnam.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site__footer"></footer>
 </body>
+
 </html>
