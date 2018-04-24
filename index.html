@@ -18,61 +18,118 @@
   <main id="site__main">
     <!-- ARTICLE -->
     <article class="article article--single">
-    <!-- ARTICLE HEADER -->
-    <header class="article__header">
-      <h1> We believe everyone should experience audio in its truest form</h1>
+      <!-- ARTICLE HEADER -->
+      <header class="article__header">
+        <h1> Getting started with Vuex </h1>
 
-      <!-- BYLINE -->
-      <div class="byline">
-        <div class="byline__box byline__author">
-          Serge S. (@shushpanov)
-        </div>
-        <div class="byline__box byline__time">
+        <!-- BYLINE -->
+        <div class="byline">
+          <div class="byline__box byline__author">
+            Serge S. (@shushpanov)
+          </div>
+          <div class="byline__box byline__time">
             <time> January 1, 1970</time>
+          </div>
         </div>
+      </header>
+
+      <!-- ARTICLE IMAGE -->
+      <div class="article__image">
+        <img src="https://cdn.scotch.io/10/fWlY0OEqSyi6RDN3mGwb_vuex%20scotch.png.jpg" alt="">
       </div>
-    </header>
 
-    <!-- ARTICLE IMAGE -->
-    <div class="article__image">
-      <img src="https://cdn.scotch.io/10/fWlY0OEqSyi6RDN3mGwb_vuex%20scotch.png.jpg" alt="">
-    </div>
+      <!-- ACTION BUTTONS -->
+      <div class="actions">
+        <a href="#" class="actions__btn actions__btn--turntables">View Code</a>
+        <a href="#" class="actions__btn actions__btn--speakers">View Demo</a>
+      </div>
 
-    <!-- ACTION BUTTONS -->
-    <div class="actions">
-      <a href="#" class="actions__btn actions__btn--turntables">View Code</a>
-      <a href="#" class="actions__btn actions__btn--speakers">View Demo</a>
-    </div>
+      <!-- ARTICLE INNER-->
+      <div class="article__inner">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
 
-    <!-- ARTICLE INNER-->
-    <div class="article__inner">
+          <!-- TABLE OF CONTENTS -->
+          <div class="sidebar__box">
+            <h3>&lt;ul&gt; of Contents</h3>
+            <ul class="table-of-contents">
+              <li>
+                <a href="#">Intro</a>
+              </li>
+              <li>
+                <a href="#">Getting Started</a>
+              </li>
+              <li>
+                <a href="#">Assembly</a>
+              </li>
+              <li>
+                <a href="#">Test</a>
+              </li>
+            </ul>
+          </div>
 
-    </div>   
-  </article>
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <!-- TABLE OF CONTENTS -->
-        <ul class="table-of-contents">
-          <li><a href="#">Intro</a></li>
-          <li><a href="#">Getting Started</a></li>
-          <li><a href="#">Assembly</a></li>
-          <li><a href="#">Test</a></li>
-        </ul>
+          <!-- SIDEBAR ADS -->
+          <div class="sidebar__box">
+            <div class="ad">
+              <img src="http://placekitten.com/g/300/250" alt="">
+            </div>
+          </div>
 
-        <!-- SIDEBAR ADS -->
-        <div class="ad">
-          <img src="http://placekitten.com/g/300/250" alt="">
+          <div class="sidebar__box share-buttons">
+            <a class="share-button background-twitter" href="#">Twitter</a>
+            <a class="share-button background-facebook" href="#">Facebook</a>
+          </div>
+        </aside>
+        <!-- CONTENT BODY -->
+        <div class="article__content content">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae
+            similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum
+            magnam.
+          </p>
+
+          <ul>
+            <li>
+              <a href="#">Intro</a>
+            </li>
+            <li>
+              <a href="#">Getting Started</a>
+            </li>
+            <li>
+              <a href="#">Assembly</a>
+            </li>
+            <li>
+              <a href="#">Test</a>
+            </li>
+          </ul>
+
+          <h2>Introduction</h2>
+
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae
+            similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum
+            magnam.
+          </p>
+
+          <img src="https://cdn.scotch.io/10/fWlY0OEqSyi6RDN3mGwb_vuex%20scotch.png.jpg" alt="">
+
+          <pre><code>
+            const store = new Vuex.Store({
+                state: {
+                  count: 0
+                },
+                mutations: {
+                  increment(state) {
+                    state.count++
+                  }
+                }
+              }) 
+              </code></pre >
+          <h3>Smaller Section</h3>
+    
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum magnam.</p>
+          
         </div>
-    </aside>
-
-    <!-- CONTENT BODY -->
-    <div class="article__content content">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum magnam.</p>
-      
-      <h2>Introduction</h2>
-      
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur vero eligendi, fugit asperiores totam repudiandae similique necessitatibus deserunt blanditiis eos? Eveniet quos id voluptatum, cumque est repudiandae sint earum magnam.</p>
-    </div>
+      </div> 
+      </article>  
   </main>
 
   <!-- FOOTER -->
