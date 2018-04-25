@@ -2,6 +2,75 @@ $primary-color: #1483FF;
 $text-color: #333;
 $header-text-color: darken($text-color, 10%);
 
+// UTILITY CLASSES ==========
+
+$sizes: (
+'0': 0,
+'xs': 5px,
+'sm': 12px,
+'': 20px,
+'md': 30px,
+'lg': 50px,
+);
+
+$positionsP: (
+'a': 'padding',
+'t': 'padding-top',
+'r': 'padding-right',
+'b': 'padding-bottom',
+'l': 'padding-left',
+'x': 'padding-top' 'padding-bottom',
+'y': 'padding-left' 'padding-right'
+);
+
+$positionsM: (
+'a': 'margin',
+'t': 'margin-top',
+'r': 'margin-right',
+'b': 'margin-bottom',
+'l': 'margin-left',
+'x': 'margin-top' 'margin-bottom',
+'y': 'margin-left' 'margin-right'
+);
+
+@each $sizeName, $sizePx in $sizes {
+  @each $posName, $posRules in $positionsP {
+    
+    @if ($sizeName == '') {
+      .p-#{$posName} {
+        @each $posRule in $posRules {
+          #{$posRule}: #{$sizePx} !important;
+        }
+      }
+    } @else {
+    .p-#{$posName}-#{$sizeName} {
+      @each $posRule in $posRules {
+        #{$posRule}: #{$sizePx} !important;
+      }
+    }
+    }
+  }
+}
+
+@each $sizeName, $sizePx in $sizes {
+  @each $posName, $posRules in $positionsM {
+    
+    @if ($sizeName == '') {
+      .m-#{$posName} {
+        @each $posRule in $posRules {
+          #{$posRule}: #{$sizePx} !important;
+        }
+      }
+    } @else {
+    .m-#{$posName}-#{$sizeName} {
+      @each $posRule in $posRules {
+        #{$posRule}: #{$sizePx} !important;
+      }
+    }
+    }
+  }
+}
+
 // COLORS ===================
 $social-colors: (
   'twitter': #1DA1F2,
